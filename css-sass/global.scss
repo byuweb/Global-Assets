@@ -6,7 +6,7 @@
 $baseUrl: 'http://byuweb.github.com/Global-Assets';
 
 html body {
-  margin-top:30px; }
+  margin-top:35px; }
 
 #byu-bar {
   font-size: 14px;
@@ -19,7 +19,7 @@ html body {
   top: 0;
   left: 0;
   min-width: 120px;
-  height:30px;
+  height:35px;
   .svg & {
     background-image: url($baseUrl + '/img/byu-header-bg.svg'); }
 
