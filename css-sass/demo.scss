@@ -1,0 +1,131 @@
+@import "compass";
+@import "highlight/github";
+
+
+$baseUrl: 'http://home.byu.edu/home/sites/default/files/global';
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2.section {
+  margin-top: 1.25em;
+}
+
+.bg, .bg-svg {
+  background: #025 url($baseUrl + '/img/byu-header-bg.png') center no-repeat;
+  height:100px;
+  color: #fff;
+  .svg & {
+    background-image: url($baseUrl + '/img/byu-header-bg.svg'); } }
+
+header.jumbotron {
+  margin-bottom: 2em;
+  .svg & {
+    height: auto; } }
+
+.bg-png {
+  background: #025 url($baseUrl + '/img/byu-header-bg.png') center no-repeat;
+  height: 100px;
+}
+
+.well h4 {
+  margin-top: -.5em;
+  code {
+    font-weight: normal;
+  }
+}
+
+code span.number {
+  color: #d14;
+}
+
+.logo-lg, 
+.js .logo-lg.png {
+  background: #025 url($baseUrl + '/img/byu-logo-lg.png') center no-repeat;
+  height: 90px;
+}
+.svg .logo-lg {
+  background-image: url($baseUrl + '/img/byu-logo-lg.svg');
+}
+
+
+.logo,
+.js .logo {
+  background: #025 url($baseUrl + '/img/byu-logo.png') center no-repeat;
+  height: 40px;
+}
+.svg .logo {
+  background-image: url($baseUrl + '/img/byu-logo.svg');
+}
+
+
+.logo-sm,
+.js .logo-sm {
+  background: #025 url($baseUrl + '/img/byu-logo-sm.png') center no-repeat;
+  height: 40px;
+}
+.svg .logo-sm {
+  background-image: url($baseUrl + '/img/byu-logo-sm.svg');
+}
+
+
+
+/* Image Replacement */
+.ir { 
+  text-indent: -9999em;
+  text-align: left;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid red;
+  position: relative;
+}
+.ir:after {
+  content:"png not supported in this browser";
+  position: absolute;
+  display: block;
+  color: red;
+  z-index: 100;
+  top:0;
+  left:0;
+}
+
+.svg div.ir, div.png {
+  border:none;
+}
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  header.jumbotron {
+    margin-left:-20px;
+    margin-right: -20px;
+    padding-left:20px;
+    padding-right:20px;
+  }
+  
+  header .lead {
+    display: none;
+    .svg & {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  h1 {
+    font-size: 40px;
+    margin:.5em 0;
+  }
+}
