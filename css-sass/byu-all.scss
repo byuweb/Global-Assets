@@ -1,0 +1,22 @@
+.byu-logo-sm, .byu-logo, .byu-logo-lg{
+	background: url(sprites.png) no-repeat;
+}
+
+.byu-logo-sm{
+	background-position: 0 0;
+	width: 84px;
+	height: 30px;
+}
+
+.byu-logo{
+	background-position: 0 -40px ;
+	width: 345px;
+	height: 30px;
+}
+
+.byu-logo-lg{
+	background-position: 0 -80px ;
+	width: 270px;
+	height: 80px;
+}
+
